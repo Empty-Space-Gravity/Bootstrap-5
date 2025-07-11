@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+
+    <style>
+
+        
+        .main-bar{
+            
+            height: 60px;
+            padding:0px 50px;
+        }
+        
+        .main-bar ul li 
+        {
+             padding-left: 10px;
+        }
+
+        .col-height
+        {
+             height:20px;
+        }
+
+        .mt
+        {
+             margin-top: 50px;
+        }
+
+    </style>
+</head>
+<body class="bg-dark">
+
+
+    <div class="navbar navbar-expand-lg navbar-expand-lg navbar-dark bg-dark">
+
+        <div class="container main-bar">
+
+            <a href="#" class="navbar-brand">Bites</a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main-bar-nav">
+                <span class="navbar-toggler-icon"></span> 
+            </button>
+
+            <div class="collapse navbar-collapse bg-dark" id="main-bar-nav" style="z-index: 999;">
+                 <ul class="navbar-nav d-sm-flex flex-sm-column align-items-sm-center w-100 d-lg-flex flex-lg-row justify-content-lg-end d-xl-flex flex-xl-row justify-content-xl-end border border-warning  p-sm-3">
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About Us</a>
+                    </li>
+            
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Menu</a>
+                    </li>
+            
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Reviews</a>
+                    </li>
+            
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Blog</a>
+                    </li>
+            
+                    <li class="nav-item">
+                         <a href="#" class="nav-link">Contact</a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="#" class="nav-link btn-outline-warning"><i class="ri-shopping-basket-line btn-outline-warning"></i></i></a>
+                    </li>
+        
+                    <li class="nav-item">
+                         <button class="btn btn-warning rounded-pill">Reserve table</button>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+    
+
+    <div class="container-fluid content-container mt">
+        <div class="container">
+
+            <h1 class="text-center pt-4 text-white mb-3">Our Regular Menu Pack</h1>
+<!--               
+            <div class="ct-container d-flex justify-content-evenly">
+                
+                <button class="btn btn-outline-warning">
+                    Special foods
+                </button>
+                
+                <button class="btn btn-outline-warning">
+                    Maxican
+                </button>
+                    
+
+                <button class="btn btn-outline-warning"> 
+                    Italian
+                </button>
+                <button class="btn btn-outline-warning">
+                    Japanese
+                </button>
+
+                <button class="btn btn-outline-warning">
+                    Drinks
+                </button>
+            
+                <button class="btn btn-outline-warning">
+                    Lunch
+                </button>
+            
+                <button class="btn btn-outline-warning">
+                    More item
+                </button>
+            </div> -->
+
+
+            <div class="my-container">
+        
+                <div class="row">
+            
+                    <div class="col-xl-12 col-sm-12  d-xl-flex justify-content-center">
+            
+                        <ul class="nav nav-pills d-sm-flex justify-content-sm-center " id="myTab">
+
+                            <li class="nav-item">
+                                <button class="btn btn-outline-warning me-xl-3 me-sm-2 p-sm-1 p-xl-2 p-md-2 p-lg-2" data-bs-toggle="pill" data-bs-target="#special-foods">Special foods</button>
+                            </li>
+            
+            
+                            <li class="nav-item">
+                                <button class="btn btn-outline-warning me-xl-3 me-sm-2 p-sm-1 p-xl-2 p-md-2 p-lg-2" data-bs-toggle="pill" data-bs-target="#Maxican ">Maxican</button>
+                            </li>
+            
+            
+                            <li class="nav-item">
+                                <button class="btn btn-outline-warning me-xl-3 me-sm-2 p-sm-1 p-xl-2 p-md-2 p-lg-2" data-bs-toggle="pill" data-bs-target="#Italian">Italian</button>
+                            </li>
+            
+            
+                            <li class="nav-item">
+                                <button class="btn btn-outline-warning me-xl-3 me-sm-2 p-sm-1 p-xl-2 p-md-2 p-lg-2" data-bs-toggle="pill" data-bs-target="#Japanese">Japanese</button>
+                            </li>
+            
+                            <li class="nav-item">
+                                <button class="btn btn-outline-warning me-xl-3  me-sm-2 p-sm-1 p-xl-2 p-md-2 p-lg-2" data-bs-toggle="pill" data-bs-target="#Drinks">Drinks</button>
+                            </li>
+            
+                            <li class="nav-item">
+                                <button class="btn btn-outline-warning me-xl-3  me-sm-2 p-sm-1 p-xl-2 p-md-2 p-lg-2" data-bs-toggle="pill" data-bs-target="#Lunch">Lunch</button>
+                            </li>
+            
+                        </ul>
+            
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+
+                        <div class="tab-content" id="pills-tabContent">
+
+                            <div class="tab-pane fade show active" id="special-foods">
+
+                                <div class="row mt-3">
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mb-md-3 mb-sm-3 d-flex justify-content-center">
+                                
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/pexels-owpictures-106343.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Grilled Chicken</h5>
+                                                <p class="card-text">Juicy grilled chicken seasoned with herbs and spices.</p>
+                                                <p><span class="fw-bold">Rs. 200</span></p>
+                                                <a href="#" class="btn btn-outline-warning rounded-pill">Add to Cart</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mb-md-3 mb-sm-3 d-flex justify-content-center">
+                                
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/pexels-chanwalrus-1059943.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Chicken Breasts</h5>
+                                                <p class="card-text">Tender, lean chicken breasts perfect for grilling, baking.</p>
+                                                <p><span class="fw-bold">Rs. 200</span></p>
+                                                <a href="#" class="btn btn-outline-warning rounded-pill">Add to Cart</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mb-md-3 mb-sm-3 d-flex justify-content-center">
+                                
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/pexels-chanwalrus-958546.jpg" class="card-img-top" alt="..." height="">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Tandori Thali</h5>
+                                                <p class="card-text">A flavorful Tandoori Thali featuring marinated meats, smoky spices.</p>
+                                                <p><span class="fw-bold">Rs. 200</span></p>
+                                                <a href="#" class="btn btn-outline-warning rounded-pill">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                
+                                    </div>
+                                
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mb-md-3 mb-sm-3 d-flex justify-content-center">
+                                
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/pexels-enginakyurt-1437267.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Pasta</h5>
+                                                <p class="card-text">Creamy, cheesy pasta tossed with herbs and spices.</p>
+                                                <p><span class="fw-bold">Rs. 200</span></p>
+                                                <a href="#" class="btn btn-outline-warning rounded-pill">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mb-md-3 mb-sm-3 d-flex justify-content-center">
+                                
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/pexels-karolina-grabowska-6660071.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Fruit Salad</h5>
+                                                <p class="card-text">Fresh, juicy fruits mixed for a colorful, healthy treat.</p>
+                                                <p><span class="fw-bold">Rs. 200</span></p>
+                                                <a href="#" class="btn btn-outline-warning rounded-pill">Add to Cart</a>
+                                            </div>
+
+                                        </div>
+                                
+                                    </div>
+                                    
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12  mb-md-3 mb-sm-3 d-flex justify-content-center">
+                                
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/pexels-vanmalidate-769289.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Grilled Steak</h5>
+                                                <p class="card-text">Succulent, perfectly grilled steak with rich, smoky flavor.</p>
+                                                <p><span class="fw-bold">Rs. 200</span></p>
+                                                <a href="#" class="btn btn-outline-warning rounded-pill">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                
+                                    </div>
+                                
+                                </div>
+
+                            </div>
+
+                            <div class="tab-pane fade" id="Maxican">
+                                <div class="row mt-3">
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mb-md-3 mb-sm-3 d-flex justify-content-center">
+                                
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/pexels-owpictures-106343.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Grilled Chicken</h5>
+                                                <p class="card-text">Juicy grilled chicken seasoned with herbs and spices.</p>
+                                                <p><span class="fw-bold">Rs. 200</span></p>
+                                                <a href="#" class="btn btn-outline-warning rounded-pill">Add to Cart</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mb-md-3 mb-sm-3 d-flex justify-content-center">
+                                
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/pexels-chanwalrus-1059943.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Chicken Breasts</h5>
+                                                <p class="card-text">Tender, lean chicken breasts perfect for grilling, baking.</p>
+                                                <p><span class="fw-bold">Rs. 200</span></p>
+                                                <a href="#" class="btn btn-outline-warning rounded-pill">Add to Cart</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mb-md-3 mb-sm-3 d-flex justify-content-center">
+                                
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/pexels-chanwalrus-958546.jpg" class="card-img-top" alt="..." height="">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Tandori Thali</h5>
+                                                <p class="card-text">A flavorful Tandoori Thali featuring marinated meats, smoky spices.</p>
+                                                <p><span class="fw-bold">Rs. 200</span></p>
+                                                <a href="#" class="btn btn-outline-warning rounded-pill">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                
+                                    </div>
+                                
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mb-md-3 mb-sm-3 d-flex justify-content-center">
+                                
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/pexels-enginakyurt-1437267.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Pasta</h5>
+                                                <p class="card-text">Creamy, cheesy pasta tossed with herbs and spices.</p>
+                                                <p><span class="fw-bold">Rs. 200</span></p>
+                                                <a href="#" class="btn btn-outline-warning rounded-pill">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mb-md-3 mb-sm-3 d-flex justify-content-center">
+                                
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/pexels-karolina-grabowska-6660071.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Fruit Salad</h5>
+                                                <p class="card-text">Fresh, juicy fruits mixed for a colorful, healthy treat.</p>
+                                                <p><span class="fw-bold">Rs. 200</span></p>
+                                                <a href="#" class="btn btn-outline-warning rounded-pill">Add to Cart</a>
+                                            </div>
+
+                                        </div>
+                                
+                                    </div>
+                                    
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12  mb-md-3 mb-sm-3 d-flex justify-content-center">
+                                
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/pexels-vanmalidate-769289.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Grilled Steak</h5>
+                                                <p class="card-text">Succulent, perfectly grilled steak with rich, smoky flavor.</p>
+                                                <p><span class="fw-bold">Rs. 200</span></p>
+                                                <a href="#" class="btn btn-outline-warning rounded-pill">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                
+                                    </div>
+                                
+                                </div>
+
+                            </div>
+
+                            <div class="tab-pane fade" id="Italian">
+
+                                <div class="row mt-3">
+
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mb-md-3 mb-sm-3 d-flex justify-content-center">
+                                
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/pexels-owpictures-106343.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Grilled Chicken</h5>
+                                                <p class="card-text">Juicy grilled chicken seasoned with herbs and spices.</p>
+                                                <p><span class="fw-bold">Rs. 200</span></p>
+                                                <a href="#" class="btn btn-outline-warning rounded-pill">Add to Cart</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mb-md-3 mb-sm-3 d-flex justify-content-center">
+                                
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/pexels-chanwalrus-1059943.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Chicken Breasts</h5>
+                                                <p class="card-text">Tender, lean chicken breasts perfect for grilling, baking.</p>
+                                                <p><span class="fw-bold">Rs. 200</span></p>
+                                                <a href="#" class="btn btn-outline-warning rounded-pill">Add to Cart</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mb-md-3 mb-sm-3 d-flex justify-content-center">
+                                
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/pexels-chanwalrus-958546.jpg" class="card-img-top" alt="..." height="">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Tandori Thali</h5>
+                                                <p class="card-text">A flavorful Tandoori Thali featuring marinated meats, smoky spices.</p>
+                                                <p><span class="fw-bold">Rs. 200</span></p>
+                                                <a href="#" class="btn btn-outline-warning rounded-pill">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                
+                                    </div>
+                                
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mb-md-3 mb-sm-3 d-flex justify-content-center">
+                                
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/pexels-enginakyurt-1437267.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Pasta</h5>
+                                                <p class="card-text">Creamy, cheesy pasta tossed with herbs and spices.</p>
+                                                <p><span class="fw-bold">Rs. 200</span></p>
+                                                <a href="#" class="btn btn-outline-warning rounded-pill">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mb-md-3 mb-sm-3 d-flex justify-content-center">
+                                
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/pexels-karolina-grabowska-6660071.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Fruit Salad</h5>
+                                                <p class="card-text">Fresh, juicy fruits mixed for a colorful, healthy treat.</p>
+                                                <p><span class="fw-bold">Rs. 200</span></p>
+                                                <a href="#" class="btn btn-outline-warning rounded-pill">Add to Cart</a>
+                                            </div>
+
+                                        </div>
+                                
+                                    </div>
+                                    
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12  mb-md-3 mb-sm-3 d-flex justify-content-center">
+                                
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/pexels-vanmalidate-769289.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Grilled Steak</h5>
+                                                <p class="card-text">Succulent, perfectly grilled steak with rich, smoky flavor.</p>
+                                                <p><span class="fw-bold">Rs. 200</span></p>
+                                                <a href="#" class="btn btn-outline-warning rounded-pill">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                
+                                    </div>
+                                
+                                 </div>
+
+
+                            </div>
+
+                            <div class="tab-pane fade" id="Japanese">
+                                   <div class="row mt-3">
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mb-md-3 mb-sm-3 d-flex justify-content-center">
+                                
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/pexels-owpictures-106343.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Grilled Chicken</h5>
+                                                <p class="card-text">Juicy grilled chicken seasoned with herbs and spices.</p>
+                                                <p><span class="fw-bold">Rs. 200</span></p>
+                                                <a href="#" class="btn btn-outline-warning rounded-pill">Add to Cart</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mb-md-3 mb-sm-3 d-flex justify-content-center">
+                                
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/pexels-chanwalrus-1059943.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Chicken Breasts</h5>
+                                                <p class="card-text">Tender, lean chicken breasts perfect for grilling, baking.</p>
+                                                <p><span class="fw-bold">Rs. 200</span></p>
+                                                <a href="#" class="btn btn-outline-warning rounded-pill">Add to Cart</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mb-md-3 mb-sm-3 d-flex justify-content-center">
+                                
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/pexels-chanwalrus-958546.jpg" class="card-img-top" alt="..." height="">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Tandori Thali</h5>
+                                                <p class="card-text">A flavorful Tandoori Thali featuring marinated meats, smoky spices.</p>
+                                                <p><span class="fw-bold">Rs. 200</span></p>
+                                                <a href="#" class="btn btn-outline-warning rounded-pill">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                
+                                    </div>
+                                
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mb-md-3 mb-sm-3 d-flex justify-content-center">
+                                
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/pexels-enginakyurt-1437267.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Pasta</h5>
+                                                <p class="card-text">Creamy, cheesy pasta tossed with herbs and spices.</p>
+                                                <p><span class="fw-bold">Rs. 200</span></p>
+                                                <a href="#" class="btn btn-outline-warning rounded-pill">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mb-md-3 mb-sm-3 d-flex justify-content-center">
+                                
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/pexels-karolina-grabowska-6660071.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Fruit Salad</h5>
+                                                <p class="card-text">Fresh, juicy fruits mixed for a colorful, healthy treat.</p>
+                                                <p><span class="fw-bold">Rs. 200</span></p>
+                                                <a href="#" class="btn btn-outline-warning rounded-pill">Add to Cart</a>
+                                            </div>
+
+                                        </div>
+                                
+                                    </div>
+                                    
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12  mb-md-3 mb-sm-3 d-flex justify-content-center">
+                                
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/pexels-vanmalidate-769289.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Grilled Steak</h5>
+                                                <p class="card-text">Succulent, perfectly grilled steak with rich, smoky flavor.</p>
+                                                <p><span class="fw-bold">Rs. 200</span></p>
+                                                <a href="#" class="btn btn-outline-warning rounded-pill">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                
+                                    </div>
+                                
+                                </div>
+
+
+                            </div>
+
+                            <div class="tab-pane fade" id="Drinks">
+
+                                <div class="row mt-3">
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mb-md-3 mb-sm-3 d-flex justify-content-center">
+                                
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/pexels-owpictures-106343.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Grilled Chicken</h5>
+                                                <p class="card-text">Juicy grilled chicken seasoned with herbs and spices.</p>
+                                                <p><span class="fw-bold">Rs. 200</span></p>
+                                                <a href="#" class="btn btn-outline-warning rounded-pill">Add to Cart</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mb-md-3 mb-sm-3 d-flex justify-content-center">
+                                
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/pexels-chanwalrus-1059943.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Chicken Breasts</h5>
+                                                <p class="card-text">Tender, lean chicken breasts perfect for grilling, baking.</p>
+                                                <p><span class="fw-bold">Rs. 200</span></p>
+                                                <a href="#" class="btn btn-outline-warning rounded-pill">Add to Cart</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mb-md-3 mb-sm-3 d-flex justify-content-center">
+                                
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/pexels-chanwalrus-958546.jpg" class="card-img-top" alt="..." height="">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Tandori Thali</h5>
+                                                <p class="card-text">A flavorful Tandoori Thali featuring marinated meats, smoky spices.</p>
+                                                <p><span class="fw-bold">Rs. 200</span></p>
+                                                <a href="#" class="btn btn-outline-warning rounded-pill">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                
+                                    </div>
+                                
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mb-md-3 mb-sm-3 d-flex justify-content-center">
+                                
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/pexels-enginakyurt-1437267.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Pasta</h5>
+                                                <p class="card-text">Creamy, cheesy pasta tossed with herbs and spices.</p>
+                                                <p><span class="fw-bold">Rs. 200</span></p>
+                                                <a href="#" class="btn btn-outline-warning rounded-pill">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mb-md-3 mb-sm-3 d-flex justify-content-center">
+                                
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/pexels-karolina-grabowska-6660071.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Fruit Salad</h5>
+                                                <p class="card-text">Fresh, juicy fruits mixed for a colorful, healthy treat.</p>
+                                                <p><span class="fw-bold">Rs. 200</span></p>
+                                                <a href="#" class="btn btn-outline-warning rounded-pill">Add to Cart</a>
+                                            </div>
+
+                                        </div>
+                                
+                                    </div>
+                                    
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12  mb-md-3 mb-sm-3 d-flex justify-content-center">
+                                
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/pexels-vanmalidate-769289.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Grilled Steak</h5>
+                                                <p class="card-text">Succulent, perfectly grilled steak with rich, smoky flavor.</p>
+                                                <p><span class="fw-bold">Rs. 200</span></p>
+                                                <a href="#" class="btn btn-outline-warning rounded-pill">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                
+                                    </div>
+                                
+                                </div>
+
+                            </div>
+
+                            <div class="tab-pane fade" id="Lunch">
+                                 <div class="row mt-3">
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mb-md-3 mb-sm-3 d-flex justify-content-center">
+                                
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/pexels-owpictures-106343.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Grilled Chicken</h5>
+                                                <p class="card-text">Juicy grilled chicken seasoned with herbs and spices.</p>
+                                                <p><span class="fw-bold">Rs. 200</span></p>
+                                                <a href="#" class="btn btn-outline-warning rounded-pill">Add to Cart</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mb-md-3 mb-sm-3 d-flex justify-content-center">
+                                
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/pexels-chanwalrus-1059943.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Chicken Breasts</h5>
+                                                <p class="card-text">Tender, lean chicken breasts perfect for grilling, baking.</p>
+                                                <p><span class="fw-bold">Rs. 200</span></p>
+                                                <a href="#" class="btn btn-outline-warning rounded-pill">Add to Cart</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mb-md-3 mb-sm-3 d-flex justify-content-center">
+                                
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/pexels-chanwalrus-958546.jpg" class="card-img-top" alt="..." height="">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Tandori Thali</h5>
+                                                <p class="card-text">A flavorful Tandoori Thali featuring marinated meats, smoky spices.</p>
+                                                <p><span class="fw-bold">Rs. 200</span></p>
+                                                <a href="#" class="btn btn-outline-warning rounded-pill">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                
+                                    </div>
+                                
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mb-md-3 mb-sm-3 d-flex justify-content-center">
+                                
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/pexels-enginakyurt-1437267.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Pasta</h5>
+                                                <p class="card-text">Creamy, cheesy pasta tossed with herbs and spices.</p>
+                                                <p><span class="fw-bold">Rs. 200</span></p>
+                                                <a href="#" class="btn btn-outline-warning rounded-pill">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mb-md-3 mb-sm-3 d-flex justify-content-center">
+                                
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/pexels-karolina-grabowska-6660071.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Fruit Salad</h5>
+                                                <p class="card-text">Fresh, juicy fruits mixed for a colorful, healthy treat.</p>
+                                                <p><span class="fw-bold">Rs. 200</span></p>
+                                                <a href="#" class="btn btn-outline-warning rounded-pill">Add to Cart</a>
+                                            </div>
+
+                                        </div>
+                                
+                                    </div>
+                                    
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12  mb-md-3 mb-sm-3 d-flex justify-content-center">
+                                
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/pexels-vanmalidate-769289.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Grilled Steak</h5>
+                                                <p class="card-text">Succulent, perfectly grilled steak with rich, smoky flavor.</p>
+                                                <p><span class="fw-bold">Rs. 200</span></p>
+                                                <a href="#" class="btn btn-outline-warning rounded-pill">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                
+                                    </div>
+                                
+                                </div>
+
+                            </div>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid footer mt-5 p-0">
+         
+
+        <div class="container">
+
+            <div class="row">
+
+                  <div class="col-xl-4 col-lg-4 d-lg-flex flex-lg-column justify-content-lg-start  col-md-4 d-md-flex flex-md-column justify-content-md-start  col-sm-12 d-sm-flex flex-sm-column align-items-sm-center">
+                     
+                    <h2 class="pt-3 text-white">Subscribe Our Newsletter</h2>
+                        
+                        <input type="email" placeholder="Enter Your Email" class="mt-sm-2 me-xl-auto  me-lg-auto me-md-auto "><i class="ri-arrow-right-line text-warning d-md-display d-sm-none"></i>
+                     
+                    <div class="icons pt-3 d-md-flex justify-content-md-start w-100 d-sm-flex justify-content-sm-center">
+
+                        <i class="ri-facebook-fill fs-2 text-warning pe-md-2 pe-sm-2" style="cursor: pointer;"></i>
+                        <i class="ri-instagram-fill fs-2 text-warning pe-md-2  pe-sm-2" style="cursor: pointer;"></i>
+                        <i class="ri-twitter-fill fs-2 text-warning pe-md-2  pe-sm-2" style="cursor: pointer;"></i>
+                        <i class="ri-youtube-fill fs-2 text-warning pe-md-2  pe-sm-2" style="cursor: pointer;"></i>
+
+                    </div>
+
+                  </div>
+
+                  <div class="col-xl-2 col-lg-2 d-lg-flex flex-lg-column justify-content-lg-start col-md-2 d-md-flex flex-md-column justify-content-md-start col-sm-12 d-sm-flex flex-sm-column align-items-sm-center">
+                    <h4 class="pt-5 text-white me-xl-3 me-lg-3 me-md-2">Services</h4>
+
+                     <div>
+                       <p class="mb-2 text-white text-sm-center text-md-start text-lg-start">online order</p>
+                       <p class="mb-2 text-white text-sm-center text-md-start text-lg-start">Pre reservation</p>
+                       <p class="mb-2 text-white text-sm-center text-md-start text-lg-start">24/7 Services</p>
+                       <p class="mb-2 text-white text-sm-center text-md-start text-lg-start">Foodie Place</p>
+                       <p class="mb-2 text-white text-sm-center text-md-start text-lg-start">Super Cheifs</p>
+                     </div>
+                  </div>
+
+                  <div class="col-xl-2 col-lg-2 d-lg-flex flex-lg-column justify-content-lg-start col-md-2 d-md-flex flex-md-column justify-content-md-start col-sm-12 d-sm-flex flex-sm-column align-items-sm-center">
+
+                    <h4 class="pt-5 text-white ps-xl-3">Quick links</h4>
+                     <div>
+                       <p class="mb-2 text-white text-sm-center text-md-start text-lg-start">Menu</p>
+                       <p class="mb-2 text-white text-sm-center text-md-start text-lg-start">Reviews</p>
+                       <p class="mb-2 text-white text-sm-center text-md-start text-lg-start">Blogs</p>
+                       <p class="mb-2 text-white text-sm-center text-md-start text-lg-start">Reserve Table</p>
+                       <p class="mb-2 text-white text-sm-center text-md-start text-lg-start">Order Foods</p>
+                     </div>
+
+                  </div>
+
+                  <div class="col-xl-2 col-lg-2 d-lg-flex flex-lg-column justify-content-lg-start col-md-2 d-md-flex flex-md-column justify-content-md-start col-sm-12 d-sm-flex flex-sm-column align-items-sm-center">
+
+                    <h4 class="pt-5 text-white">About</h4>
+                     <div>
+                       <p class="mb-2 text-white text-sm-center text-md-start text-lg-start">Our Story</p>
+                       <p class="mb-2 text-white text-sm-center text-md-start text-lg-start">Benefits</p>
+                       <p class="mb-2 text-white text-sm-center text-md-start text-lg-start">career</p>
+                       <p class="mb-2 text-white text-sm-center text-md-start text-lg-start">Our cheifs</p>
+                     </div>
+
+
+                  </div>
+                  <div class="col-xl-2 col-lg-2 d-lg-flex flex-lg-column justify-content-lg-start col-md-2 d-md-flex flex-md-column justify-content-md-start col-sm-12 d-sm-flex flex-sm-column align-items-sm-center">
+
+                    <h4 class="pt-5 text-white">Help</h4>
+                     <div>
+                       <p class="mb-2 text-white text-sm-center text-md-start text-lg-start">Contact</p>
+                       <p class="mb-2 text-white text-sm-center text-md-start text-lg-start">Support</p>
+                       <p class="mb-2 text-white text-sm-center text-md-start text-lg-start">FAQ</p>
+                     </div>
+                  </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
